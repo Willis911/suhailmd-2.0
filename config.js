@@ -67,7 +67,7 @@ global.SESSION_ID = process.env.SESSION_ID  || "SUHAIL_03_49_11_03_ewogICJjcmVkc
 
 module.exports = {
 
-  menu: process.env.MENU || "", /**  Available @MENU @Schemes 1: Aztec_Md, 2: A17_Md, 3: Suhail-Md Default ---------- If Not Choose then it Randomely Pic One Of Them Each time **/
+  menu: process.env.MENU || "3", /**  Available @MENU @Schemes 1: Aztec_Md, 2: A17_Md, 3: Suhail-Md Default ---------- If Not Choose then it Randomely Pic One Of Them Each time **/
 
   HANDLERS: process.env.PREFIX  || ".",
   BRANCH  : process.env.BRANCH  || "main",
@@ -92,7 +92,7 @@ module.exports = {
 
 
   WORKTYPE: process.env.WORKTYPE || process.env.MODE|| "private",
-  LANG: ( process.env.THEME ||  "SUHAIL"  ).toUpperCase(),
+  LANG: ( process.env.THEME ||  "ADAM"  ).toUpperCase(),
 
 
 
@@ -130,7 +130,7 @@ fs.watchFile(file, () => { fs.unwatchFile(file);console.log(`Update'${__filename
  
 
 // ========================= [ Disables in V.1.2.8 ] ===============================\\  
-  //style : process.env.STYLE || "2",  // put '1' & "2" here to check bot styles
+  //style : process.env.STYLE || "3",  // put '1' & "2" here to check bot styles
   //readmessage:process.env.READ_MESSAGE|| "false",
   //warncount: process.env.WARN_COUNT || 3,
   //userImages:process.env.USER_IMAGES|| "text",  // SET IMAGE AND VIDEO URL FOR BOT MENUS 
